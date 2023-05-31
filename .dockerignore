@@ -1,0 +1,16 @@
+# MORE info at https://docs.docker.com/engine/reference/builder/#dockerignore-file
+
+# as example
+ignored
+
+# full folder to ignore
+folder/
+
+# all that start with temp
+temp?
+
+# all that have a temp folder, first level
+*/temp
+
+# all that have a temp folder, all levels
+**/temp

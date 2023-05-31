@@ -1,0 +1,30 @@
+# NOTE: if you use to much main commands like RUN's,
+# you could reach the limit of the docker container
+# but this only happens when the images is to complex
+# so it's better to concatena and reduce main command calls
+
+# NOTE: if you don't modify something that happens
+# in a layer, docker will cache the result, reducing the
+# execution time
+
+# NOTE: if you only use the FROM command and you already have the 
+# image in your local repo, the image will use the image
+# and also the image id will be the same, because there's no difference
+# to earn space in memory
+
+# NOTE: tags are used to tag images to group them, to identify
+# from one to another and so on
+
+# NOTE: install only required stuff, only what run and libraries
+# only one program to run by container
+
+# NOTE: slim or alpine versions are better, less heavy is better
+
+# NOTE: container by program is better, unit per unit for scaling
+
+# NOTE: docker history <image> to see layer count
+
+# NOTE: to reduce the image size, try to create less layers
+# concatenating commands (specially when get files and you don't need to run)
+
+# NOTE: add checks the file content, to check if they can cached the layer
